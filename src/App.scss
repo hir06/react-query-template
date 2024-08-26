@@ -1,0 +1,25 @@
+@import './styles/_variables';
+
+$header-height : 80px;
+.App {
+  text-align: center;
+  .header {
+    position: fixed;
+    color: $secondary-color;
+    top: 0;
+    width: 100%;
+    height: $header-height;
+    background: #f8f9fa;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+    height: calc(100vh - 80px);
+    margin-top: $header-height;
+    overflow-y: auto;
+  }
+  .side-nav {
+    overflow-y: auto;
+  }
+}
+
